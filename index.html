@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carta Dinamica</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="background-gradient"></div>
+	<div class="floating-hearts" aria-hidden="true"></div>
+
+	<main class="canvas">
+		<header class="intro">
+			<p class="eyebrow">Para ti</p>
+			<h1>Una carta que se abre sola, pero solo si quieres</h1>
+			<p class="lead">Toca el sobre. Se abre, aparece la hoja y deja que las palabras se escriban solas.</p>
+		</header>
+
+		<section class="envelope-stage">
+			<div class="envelope-stack">
+				<button id="openButton" class="envelope" aria-label="Abrir carta">
+					<span class="seal">&hearts;</span>
+					<span class="fold"></span>
+				</button>
+				<div class="letter-sheet" id="letter">
+					<div class="sheet">
+						<p class="timestamp">Hoy</p>
+						<h2>Hola </h2>
+						<p class="typewriter" id="typewriter"></p>
+					</div>
+				</div>
+				<div class="envelope-glow"></div>
+			</div>
+			<div class="hint">Haz clic para abrir</div>
+		</section>
+		<div class="signature-inline" id="signatureInline">Att: Leo <span class="heart-beat">&hearts;</span></div>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
